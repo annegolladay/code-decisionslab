@@ -161,7 +161,8 @@ console.log(changeMyMind);
 // Try to change the value of changeMyMind (irrespective of whether it is true or false) and then console.log it's new status. It should log true. Hint: use the not operator.
 
 //CODE HERE
-
+changeMyMind = !changeMyMind;
+console.log(changeMyMind);
 
 
 
@@ -238,8 +239,27 @@ If the letter grade is not one of the above letters, console.log 'Not an eligibl
 */
 
 //Code Here
+switch (letterGrade) {
+  case 'A':
+    letterGrade = "The student is doing excellently.";
+    break;
+  case 'B':
+    letterGrade = "The student is doing well.";
+    break;
+  case 'C':
+    letterGrade = "The student is doing alright.";
+    break;
+  case 'D':
+    letterGrade = "The student is not doing very well.";
+    break;
+  case 'F':
+    letterGrade = "The student is failing.";
+    break;
+  default:
+    letterGrade = 'Not an eligible grade.';
 
-
+}
+console.log(letterGrade);
 
 ////////// PROBLEM 15 //////////
 /* The famous FizzBuzz, Devmountain style!
@@ -267,3 +287,14 @@ If the letter grade is not one of the above letters, console.log 'Not an eligibl
 */
 
 //Code Here
+for (let i = 0; i <= 100; i++) {
+  if (i % 5 === 0 && i % 3 === 0) {
+    console.log('Devmountain');
+  } else if (i % 3 === 0) {
+    console.log('Dev');
+  } else if (i % 5 === 0) {
+    console.log('Mountain');
+  } else {
+    console.log(i);
+  }
+}
